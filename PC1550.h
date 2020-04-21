@@ -98,7 +98,7 @@ class PC1550
 	uint8_t getKeyValue(char key);
 
 public:
-	PC1550(uint8_t datapin = A3, uint8_t clockpin = A4, uint8_t pgmpin = A1);
+	PC1550(uint8_t datapin = D1, uint8_t clockpin = D2, uint8_t pgmpin = D3);
 	void processClockCycle();
 	void processTransmissionCycle();
 
