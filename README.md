@@ -98,7 +98,8 @@ by the clock going low and then returning to a high state).  After
 16 clock cycles, the PC1550 holds the clock high for roughly 26.5ms
 again, which starts the entire cycle over.
 
-During the 16 clock cycles data is received when the clock is high:
+During the 16 clock cycles data is sent from the panel to the keypad
+when the clock is high:
    - The first 8 clock cycles are used to send one octet (byte)
      of data to the keypad (one bit per clock cycle).  This byte 
      contains information about which zones are currently open 
